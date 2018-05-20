@@ -22,26 +22,26 @@ module.exports = appInfo => {
     ].join(','),
   };
 
-  // 数据库的配置
-  config.mysql = {
-    // 单实例数据库配置
-    client: {
-      // host
-      host: '47.93.54.212',
-      // 端口号
-      port: '3306',
-      // 用户名
-      user: 'sky300',
-      // 密码
-      password: 'sky185959',
-      // 数据库名
-      database: 'cms',
-    },
-    // 是否加载到 app 上，默认开启
-    app: true,
-    // 是否加载到 agent 上，默认关闭
-    agent: false,
-  };
+  // // 数据库的配置
+  // config.mysql = {
+  //   // 单实例数据库配置
+  //   client: {
+  //     // host
+  //     host: '47.93.54.212',
+  //     // 端口号
+  //     port: '3306',
+  //     // 用户名
+  //     user: 'sky300',
+  //     // 密码
+  //     password: 'sky185959',
+  //     // 数据库名
+  //     database: 'cms',
+  //   },
+  //   // 是否加载到 app 上，默认开启
+  //   app: true,
+  //   // 是否加载到 agent 上，默认关闭
+  //   agent: false,
+  // };
 
   return config;
 };
