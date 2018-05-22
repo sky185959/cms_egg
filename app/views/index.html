@@ -16,72 +16,7 @@
 </head>
 
 <body>
-  <header id="nav">
-    <div class="container">
-      <div class="logo-box">
-        <a title="甘肃瑞盈生态农业开发有限责任公司" href="/banner/business-template/V458/">
-          <img src="/public/images/logo.png" alt="甘肃瑞盈生态农业开发有限责任公司">
-        </a>
-      </div>
-      <div class="nav-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="nav1">
-        <ul>
-          <li class="one">
-            <a class="on" title="返回首页" href="/banner/business-template/V458/">网站首页</a>
-          </li>
-          <li class="one">
-            <a class="toogle" href="/banner/business-template/V458/about_us" title="关于我们" target="">关于我们
-              <span class="fa fa-angle-down"></span>
-            </a>
-            <div class="subnav nav2">
-              <ul>
-                <li>
-                  <a title="公司简介" href="/banner/business-template/V458/about_us" target="_blank">公司简介</a>
-                </li>
-                <li>
-                  <a title="发展历程" href="/banner/business-template/V458/fa-zhan-li-cheng" target="_blank">发展历程</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="one">
-            <a class="toogle" href="/banner/business-template/V458/Product" title="公司产品" target="">公司产品
-              <span class="fa fa-angle-down"></span>
-            </a>
-            <div class="subnav nav2">
-              <ul>
-                <li>
-                  <a title="绿色蔬菜" href="/banner/business-template/V458/lv-se-shu-cai" target="_blank">绿色蔬菜</a>
-                </li>
-                <li>
-                  <a title="热销水果" href="/banner/business-template/V458/re-xiao-shui-guo" target="_blank">热销水果</a>
-                </li>
-                <li>
-                  <a title="幼菜基地" href="/banner/business-template/V458/you-cai-ji-di" target="_blank">幼菜基地</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="one">
-            <a href="/banner/business-template/V458/SERVICE" title="业务服务" target="">业务服务</a>
-          </li>
-          <li class="one">
-            <a href="/banner/business-template/V458/news" title="新闻资讯" target="">新闻资讯</a>
-          </li>
-          <li class="one">
-            <a href="/banner/business-template/V458/team" title="社会责任" target="">社会责任</a>
-          </li>
-          <li class="one">
-            <a href="/banner/business-template/V458/contact" title="联系我们" target="">联系我们</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
+  {% include "header.html" %}
 
   <div id="banner" class="carousel bs-slider slide control-round" data-ride="carousel">
     <ul class="carousel-indicators">
@@ -550,15 +485,7 @@
         </div>
       </div>
     </div>
-    <div class="foot">
-      <div class="container">
-        <p>Copyright ©
-          <a href="http://127.0.0.1/demo/business-template/V458/" target="_blank">绿色农产品响应式网站模板</a>,Inc.All rights reserved.&nbsp;&nbsp;
-          <a rel="nofollow" href="http://www.miibeian.gov.cn/" target="_blank">京ICP备88888888号&nbsp;&nbsp;Powered by </a>
-          <a href="http://www.cmseasy.cn" title="CmsEasy企业网站系统" target="_blank">CmsEasy</a>
-        </p>
-      </div>
-    </div>
+    {% include "footer.html" %}
   </div>
   <script src="/public/js/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

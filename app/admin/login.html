@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>登录</title>
+  <title>looui后台管理</title>
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="icon" href="/public/images/favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <script src="/public//static/layui/layui.js"></script>
+  <link rel="stylesheet" href="/public/layui/css/layui.css" media="all" />
 </head>
-<body>
-  hi 
+
+<body class="loginBody">
+  <form class="layui-form">
+    <div class="layui-form-item">
+      <img style="width: 70%;margin: 10px 15%;" src="/public/images/logo.png">
+    </div>
+    <div class="layui-form-item">
+      <input type="text" placeholder="请输入用户名" autocomplete="off" name="user" id="user" class="layui-input" lay-verify="required">
+    </div>
+    <div class="layui-form-item">
+      <input type="password" placeholder="请输入密码" autocomplete="off" name="pwd" id="pwd" class="layui-input" lay-verify="required">
+    </div>
+    <div class="layui-form-item" id="imgCode">
+      <input type="text" placeholder="请输入验证码" autocomplete="off" name="code" id="code" class="layui-input">
+      <img src="/codeGetPwd.html" onclick="this.src='/codeGetPwd.html?'+Math.random();">
+    </div>
+    <div class="layui-form-item">
+      <button class="layui-btn login-btn" lay-filter="login" lay-submit>登录</button>
+    </div>
+  </form>
 </body>
+<script src="/public/static/js/login.js"></script>
+
 </html>

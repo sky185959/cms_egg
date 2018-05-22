@@ -11,6 +11,41 @@ li {
   list-style: none;
 }
 
+a {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+/* 划过图片放大 */
+
+.img-auto {
+  display: block;
+  overflow: hidden;
+}
+
+.img-auto img {
+  width: auto;
+  height: auto;
+  margin: 0px auto;
+  transition: 600ms;
+}
+
+.img-auto img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 
 /* 导航 */
 
@@ -1243,4 +1278,211 @@ li {
   margin: 0;
   overflow: hidden;
   color: #6a6a6a;
+}
+
+
+/* 内页文字大小按钮 */
+
+.content_tools {
+  float: right;
+  margin: 30px 0px;
+  padding: 5px 15px;
+  background: #eee;
+  text-align: right;
+  font-size: 14px;
+}
+
+.lead {
+  font-size: 1.0em;
+  line-height: 1.8;
+}
+
+
+/* 联系我们 */
+
+.contact-us {
+  background: #242625;
+}
+
+.contact-us h3 {
+  font-size: 60px;
+  line-height: 120%;
+  color: #CCCCCC;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.contact-us h3 span {
+  font-weight: bold;
+  color: #C22C45;
+}
+
+.contact-us h4 {
+  clear: both;
+  margin: 50px auto 0;
+  padding: 0 0 50px
+}
+
+.contact-us dl dt {
+  line-height: 40px;
+  color: #CACACA;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.contact-us dl dd {
+  color: #AEAEAE;
+  font-size: 1.0em;
+}
+
+.content-ditu {
+  height: 50.8em;
+  overflow: hidden;
+}
+
+.contact-us .glyphicon {
+  font-size: 50px;
+}
+
+
+/* 通用 */
+
+.blank5,
+.blank10,
+.blank20,
+.blank30,
+.blank50,
+.blank60 {
+  clear: both;
+  height: 5px;
+  overflow: hidden;
+}
+
+.blank10 {
+  height: 10px;
+}
+
+.blank20 {
+  height: 20px;
+}
+
+.blank30 {
+  height: 30px;
+}
+
+.blank50 {
+  height: 50px;
+}
+
+.blank60 {
+  height: 60px;
+}
+
+
+/* 新闻 */
+
+.xinwen {
+  padding: 30px 0;
+  border-top: 1px solid #DDD;
+}
+
+.xinwen a {
+  text-decoration: none;
+}
+
+.xinwen-date {
+  float: left;
+  margin-right: 20px;
+}
+
+.xinwen-date h3 {
+  color: #999;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0px 0 30px;
+}
+
+.xinwen-date span {
+  padding: 6px 11px;
+  border: 1px solid transparent;
+}
+
+.xinwen-date span i {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background: url(../images/base/icon.png) no-repeat -110px -11px;
+}
+
+.xinwen:hover .xinwen-date h3 {
+  color: #333;
+}
+
+.xinwen:hover .xinwen-date span {
+  border-color: #90AF6B;
+  margin-top: 10px;
+  background: #90AF6B;
+}
+
+.xinwen:hover .xinwen-date span i {
+  background: url(../images/base/icon.png) no-repeat -42px -100px;
+}
+
+.xinwen-text {
+  padding-left: 100px;
+}
+
+.xinwen-text h4 {
+  color: #666;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.xinwen-text h4:before {
+  display: block;
+  float: left;
+  margin: 10px 20px 0 0;
+  height: 1px;
+  background: #AAA;
+  width: 40px;
+  transition: 600ms;
+}
+
+.xinwen-text p {
+  line-height: 24px;
+  height: 48px;
+  overflow: hidden;
+  color: #999;
+  transition: 600ms;
+}
+
+.xinwen:hover .xinwen-text h4 {
+  color: #333;
+}
+
+.xinwen:hover .xinwen-text h4:before {
+  width: 60px;
+  background: #999;
+}
+
+@media screen and (min-width:768px) {
+  .xinwen-date h3 {
+    margin-top: 10px;
+  }
+  .xinwen-text h4:before {
+    content: "";
+  }
+  .xinwen-text p {
+    padding-left: 60px;
+  }
+  .xinwen:hover .xinwen-text p {
+    padding-left: 80px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .xinwen img {
+    margin-bottom: 20px;
+  }
 }
