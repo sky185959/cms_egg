@@ -20,6 +20,25 @@ class HomeController extends Controller {
     await this.ctx.render('/about_us/honor');
   }
 
+  // 化肥
+  async fertilizer() {
+    await this.ctx.render('/product_center/fertilizer');
+  }
+
+  // 农药
+  async pesticide() {
+    await this.ctx.render('/product_center/pesticide');
+  }
+
+  // 农具
+  async farmtool() {
+    await this.ctx.render('/product_center/farmtool');
+  }
+
+  async productDetail() {
+    await this.ctx.render('/product_center/news_detail');
+  }
+
   async news() {
     await this.ctx.render('/news/company_news');
   }

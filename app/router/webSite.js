@@ -12,5 +12,10 @@ module.exports = app => {
   router.get('/news/industry', controller.webSite.home.industry);
   router.get('/news/detial', controller.webSite.home.newsDetail);
 
+  router.get('/product/fertilizer', controller.webSite.home.fertilizer);
+  router.get('/product/pesticide', controller.webSite.home.pesticide);
+  router.get('/product/farmtool', controller.webSite.home.farmtool);
+  router.get('/product/detial', controller.webSite.home.productDetail);
+
   router.get('/contact', controller.webSite.home.contact);
 };
